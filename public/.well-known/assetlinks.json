@@ -1,12 +1,9 @@
-[
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.spydar.tour",
-      "sha256_cert_fingerprints": [
-        "6D:92:7D:BF:3D:BC:20:BF:77:2E:EE:06:C1:A8:98:76:A2:2A:B7:88:1E:C5:45:C7:B7:EC:10:CE:BC:B2:25:F4"
-      ]
-    }
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.spydar.tour",
+    "sha256_cert_fingerprints":
+    ["6D:92:7D:BF:3D:BC:20:BF:77:2E:EE:06:C1:A8:98:76:A2:2A:B7:88:1E:C5:45:C7:B7:EC:10:CE:BC:B2:25:F4"]
   }
-]
+}]
