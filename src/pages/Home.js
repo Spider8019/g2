@@ -1,18 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { isMobile } from 'react-device-detect'
 
 const Home = () => {
   return (
     <div
       className="w-full grid place-items-center my-8 sm:my-0 bg-slate-200"
       style={{
-        height: 'calc(100vh - 96px)',
+        height: !isMobile ? 'calc(100vh - 96px)' : 'fit-content',
         // background:
         //   ' linear-gradient(transparent,#000), url("https://i.pinimg.com/736x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg")',
         // backgroundSize: '80px',
       }}
     >
-      <div className="w-3/4 sm:w-2/3 flex flex-col items-center">
+      <div className="w-full sm:w-2/3 flex flex-col items-center p-4 sm:p-0">
         <div className="flex gap-8">
           <img
             src="https://i.pinimg.com/736x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg"
@@ -37,17 +38,17 @@ const Home = () => {
             and start exploring!
           </p>
         </div>
-        <div className="flex gap-4 mt-8">
+        <div className="flex gap-4 mt-8 flex-row">
           <NavLink
             to="https://play.google.com/store/apps/details?id=com.spydar.tour"
             target="_blank"
           >
-            <p className="p-4 bg-[#5271FF] rounded-xl text-2xl text-white cursor-pointer shadow-xl">
+            <p className="p-2 sm:p-4 bg-[#5271FF] rounded-xl text-xl sm:text-2xl text-white cursor-pointer shadow-xl">
               Download Now
             </p>
           </NavLink>
           <NavLink to="/contact">
-            <p className="p-4 bg-[#5271FF] rounded-xl text-2xl text-white cursor-pointer shadow-xl">
+            <p className="p-2 sm:p-4 bg-[#5271FF] rounded-xl text-xl sm:text-2xl text-white cursor-pointer shadow-xl">
               Contacts
             </p>
           </NavLink>

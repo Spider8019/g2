@@ -8,8 +8,8 @@ import Error from '../pages/Error'
 const AllRoutes = () => {
   return (
     <React.Fragment>
-      <Header />
       <Router basename="/">
+        <Header />
         <Suspense fallback={'... is loading'}>
           <Routes>
             {MainRouteList.map((route, index) => {
@@ -21,12 +21,12 @@ const AllRoutes = () => {
                 />
               )
             })}
-      
+
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>
+        <Footer />
       </Router>
-      <Footer />
     </React.Fragment>
   )
 }
