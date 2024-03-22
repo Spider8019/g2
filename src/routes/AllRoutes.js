@@ -21,7 +21,7 @@ const AllRoutes = () => {
                 />
               )
             })}
-            <Route path="./well-known/assetlinks.json"/>
+      
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>
