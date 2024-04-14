@@ -7,7 +7,7 @@ const Home = () => {
     <div
       className="w-full grid place-items-center my-8 sm:my-0 bg-slate-200"
       style={{
-        height: !isMobile ? 'calc(100vh - 96px)' : 'fit-content',
+        minHeight: 'calc(100vh - 120px)' 
         // background:
         //   ' linear-gradient(transparent,#000), url("https://i.pinimg.com/736x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg")',
         // backgroundSize: '80px',
@@ -29,7 +29,7 @@ const Home = () => {
         <div className="text-center">
           <p className="text-4xl my-8">ghumakkad</p>
 
-          <p className="text-center">
+          <p className="text-center text-xl">
             Embark on a journey of discovery with "ghumakkad" on the Google Play
             Store! Whether you're seeking cultural experiences, adventure, or
             simply the best local spots, "ghumakkad" is your guide to exploring
