@@ -29,7 +29,7 @@ const Home = () => {
         <div className="text-center">
           <p className="text-4xl my-8">ghumakkad</p>
 
-          <p className="text-center text-xl">
+          <p className="text-center">
             Embark on a journey of discovery with "ghumakkad" on the Google Play
             Store! Whether you're seeking cultural experiences, adventure, or
             simply the best local spots, "ghumakkad" is your guide to exploring
