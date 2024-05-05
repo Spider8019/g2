@@ -40,6 +40,7 @@ const CategoryWise = () => {
         <meta property="og:title" content={data.labelForTitle} />
         <meta property="og:description" content={data.title} />
         <meta property="og:image" content={data.coverImage} />
+        <meta property="og:type" content="article" />
       </Helmet>
       <div className="m-4 sm:m-20 grid sm:grid-cols-2 grid-cols-1 sm:gap-20">
         <img
