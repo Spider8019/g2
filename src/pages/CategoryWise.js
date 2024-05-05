@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { isMobile } from 'react-device-detect'
 import { useParams } from 'react-router-dom'
 import { useQuery } from 'react-query'
+import { Helmet } from 'react-helmet'
 
 const CategoryWise = () => {
   //   const [data, setPosts] = useState({})
@@ -34,13 +35,19 @@ const CategoryWise = () => {
         // backgroundSize: '80px',
       }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta property="og:title" content={data.labelForTitle} />
+        <meta property="og:description" content={data.title} />
+        <meta property="og:image" content={data.coverImage} />
+      </Helmet>
       <div className="m-4 sm:m-20 grid sm:grid-cols-2 grid-cols-1 sm:gap-20">
         <img
           src={data.coverImage}
           alt="Cover"
           className="w-full rounded-xl bg-white sm:sticky sm:top-8"
         />
-        <div className='block sm:hidden'>
+        <div className="block sm:hidden">
           <div className="flex justify-center w-full gap-4 mt-8 flex-row mb-8">
             <NavLink
               to="https://play.google.com/store/apps/details?id=com.spydar.tour"
